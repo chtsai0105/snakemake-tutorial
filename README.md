@@ -40,22 +40,22 @@ Clone the repo to your computer.
 Clone by the following command if you're using public key for github connection.
 
 ```
-git clone --recurse-submodules git@github.com:chtsai0105/metagenome-snakemake.git
+git clone --recurse-submodules git@github.com:chtsai0105/snakemake-tutorial.git
 ```
 
 Or clone by https link.
 
 ```
-git clone --recurse-submodules https://github.com/chtsai0105/metagenome-snakemake.git
+git clone --recurse-submodules https://github.com/chtsai0105/snakemake-tutorial.git
 ```
 
 Otherwise, clone the submodules as a second step by:
 ```
-cd metagenome-snakemake
+cd metagenome-tutorial
 git submodule update --init
 ```
 
-Next, go to the directory by `cd metagenome-snakemake`. It should contains the following files:
+Next, go to the directory by `cd metagenome-tutorial`. It should contains the following files:
 
 File                        |Description
 ----------------------------|---------------------------------
