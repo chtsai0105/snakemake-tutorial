@@ -214,7 +214,7 @@ rule plot:
     input:
         rules.bcftools_stats.output.stats
     output:
-        directory("data/variance_calling/plots")
+        directory("data/variance_calling/plots")    ## By default the snakemake will expect the output as a file. Use directory function to specify the output as a folder.
     conda:
         "envs/variance_calling.yaml"
     shell:
