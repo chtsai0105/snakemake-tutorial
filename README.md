@@ -57,14 +57,14 @@ git submodule update --init
 
 Next, go to the directory by `cd metagenome-snakemake`. It should contains the following files:
 
-File                    |Description
-------------------------|---------------------------------
-`snakefile`             |Define the rules for the workflow.
-`metadata.csv`          |The metadata for samples. Define the names of the samples and the fastq files.
-`run_snakemake.bash`    |The bash script for running the workflow.
-`data/`                 |The folder for the data and the workflow outputs.
-`envs/`                 |The folder that contains the yaml config for conda environments.
-`slurm/`                |The folder that contains the slurm profile for stajichlab partition@UCR hpcc.
+File                        |Description
+----------------------------|---------------------------------
+`snakefile`                 |Define the rules for the workflow.
+`metadata.csv`              |The metadata for samples. Define the names of the samples and the fastq files.
+`run_snakemake.bash`        |The bash script for running the workflow.
+`data/`                     |The folder for the data and the workflow outputs.
+`envs/`                     |The folder that contains the yaml config for conda environments.
+`snakemake_profile-slurm/`  |The folder that contains the slurm profile for stajichlab partition@UCR hpcc.
 
 ## Define the samples
 
@@ -72,7 +72,7 @@ You should properly defined your metadata, which is recorded in the `metadata.cs
 
 ## Setup the slurm profile (Optional)
 
-If you want to run the workflow on the cluster, you have to setup the profile first. Since the `slurm` profile have been cloned as a submodule, you can simply symlink the **slurm** folder to your snakemake config folder by:
+If you want to run the workflow on the cluster, you have to setup the profile first. Since the `snakemake_profile-slurm` profile have been cloned as a submodule, you can simply symlink the **slurm** folder to your snakemake config folder by:
 
 ```
 ln -s `realpath slurm` $HOME/.config/snakemake
