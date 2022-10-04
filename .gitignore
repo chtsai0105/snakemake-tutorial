@@ -1,0 +1,13 @@
+/*
+.*
+
+!.gitignore
+!README.md
+!snakefile
+!metadata.csv
+!run_snakemake.bash
+
+!/data
+/data/*
+!data/fastq/.gitkeep
+!/envs
